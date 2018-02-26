@@ -1,0 +1,32 @@
+{
+  "name": "Pedrosoares/mwb-pattern-converter",
+  "description": "MySQL Workbench MWB file to Lumen Pattern",
+  "keywords": [
+  ],
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Pedro Augusto da Silva Soares",
+      "email": "contato@Pedrosoares.net",
+      "homepage": "http://Pedrosoares.net"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pedrosoares\\MwbPatternConverter\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pedrosoares\\MwbPatternConverter\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "stable"
+}
