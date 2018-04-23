@@ -23,7 +23,7 @@ class Parser extends \TakaakiMizuno\MWBParser\Parser {
         }
         $this->parseForeignKeyBackward($tableIds);
 
-        $this->dbname = (string) $this->data->xpath('/data[@grt_format="2.0"]/value[@type="object"]/value[3]/value[@type="object"]/value[1]/value[2]/value[@type="object"]//value[16]/text()')[0];
+        $this->dbname = (string) $this->data->xpath('//value[@struct-name="db.mysql.Schema"]/value[@key="name"]/text()')[0];
     }
 
     /**
